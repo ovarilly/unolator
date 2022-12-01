@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:rowCount="2"
+    android:columnCount="2"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/playerNameView"
+        style="@style/word_title"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/purple_200" />
+    <TextView
+        android:id="@+id/scoreView"
+        style="@style/word_title"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@color/teal_200" />
+
+</GridLayout>

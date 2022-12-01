@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Unolator</string>
+    <string name="add_player">Add Player</string>
+    <string name="del_player">Remove Player</string>
+    <string name="hint_name">Player Name...</string>
+    <string name="button_save">Save</string>
+    <string name="button_delete">Delete</string>
+    <string name="reset_scores">Reset Scores</string>
+    <string name="player_edit">Player Edit</string>
+    <string name="score_entry">Score Entry</string>
+
+</resources>

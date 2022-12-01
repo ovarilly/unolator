@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.unolator">
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Unolator"
+        tools:targetApi="31">
+        <activity
+            android:name="com.unolator.activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.unolator.activity.PlayerEditActivity"
+            android:exported="true"
+            android:parentActivityName="com.unolator.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.unolator.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.unolator.activity.NewPlayerActivity"
+            android:exported="true"
+            android:parentActivityName="com.unolator.activity.PlayerEditActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.unolator.activity.PlayerEditActivity" />
+        </activity>
+        <activity
+            android:name="com.unolator.activity.DeletePlayerActivity"
+            android:exported="true"
+            android:parentActivityName="com.unolator.activity.PlayerEditActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.unolator.activity.PlayerEditActivity" />
+        </activity>
+    </application>
+
+</manifest>
